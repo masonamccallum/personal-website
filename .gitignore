@@ -1,0 +1,11 @@
+*sqlite
+venv/
+__pycache__/
+*pyc
+*.vscode
+*.swp
+*orig
+.project
+.pydevproject
+.settings
+.idea

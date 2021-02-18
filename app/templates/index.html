@@ -1,0 +1,100 @@
+{% extends "base.html" %} {% import "bootstrap/wtf.html" as wtf %}
+
+<body class="scroll-area" data-spy="scroll" data-target="#spy" data-offset="0">
+
+    {% block page_content %}
+    <section id="Landing" class="my-section">
+        <div class="container container-fluid  myContainer">
+            <!-- Row 1 -->
+            <div class="row">
+                <!-- Col1 of Row 1-->
+                <div class="col my-col">
+                    <div style="width:200px; height:200px; float:right; margin:10px;">
+                        <img class="my-img" src="{{url_for('static',filename='MasonPicture.jpg')}}" style="border-radius:50%; width:100%; height:100%;">
+                    </div>
+                    <p class="mytext-sm" style="margin:20px;">As a kid, I dreamt of becoming an astronaut; to unrelentingly push the boundaries of what is possible and to advance the cutting edge of scientific achievement. Today I dream of becoming an applied mathematician for the same reason.
+                        I am currently pursuing my dream of earning a PhD in Computational and Applied Mathematics form SMU where I strive to put my foot on the moon, so to speak.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+            <div class="row">
+                <!-- Col1 of Row 2-->
+                <div class="col my-col d-flex justify-content-center">
+                    <div>
+                        <h5 class="mytext-md">Professional Interests</h5>
+                        <ul style="list-style: circle;" class="mytext-sm">
+                            <li>Mathematical Modeling</li>
+                            <li>Analysis</li>
+                            <li>Software development</li>
+                        </ul>
+                        <div style="width:400px;height:auto">
+                            <div class="row">
+                                <div class="col">
+                                    <img src="{{url_for('static',filename='c++Logo.png')}}" style="width:40px; height:auto;">
+                                </div>
+                                <div class="col">
+                                    <img src="{{url_for('static',filename='ubuntuLogo.png')}}" style="width:40px; height:auto;">
+                                </div>
+                                <div class="col">
+                                    <img src="{{url_for('static',filename='latexLogo.png')}}" style="width:60px; height:auto;">
+                                </div>
+                                <div class="col">
+                                    <img src="{{url_for('static',filename='pythonLogo.png')}}" style="width:40px; height:auto;">
+                                </div>
+                                <div class="col">
+                                    <img src="{{url_for('static',filename='nvidiaLogo.png')}}" style="width:40px; height:auto;">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 my-col">
+                    <div style="float:bottom;">
+                        <a href="https://www.linkedin.com/in/mason-a-mccallum/" style="color:black;">
+                            <i class="fa fa-linkedin" style="font-size:30px; margin:5px"></i>
+                        </a>
+                        <a href="https://www.facebook.com/mason.mccallum.7/" style="color:black;">
+                            <i class="fa fa-facebook" style="font-size:30px; margin:5px"></i>
+                        </a>
+                        <a href="https://github.com/masonamccallum" style="color:black;">
+                            <i class="fa fa-github" style="font-size:30px; margin:5px"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <section id="My Work" class="my-section">
+        <div class="container container-fluid  myContainer">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card mb-3 my-card">
+                        <!--<img class="card-img-top" src="../static/binaryStar.jpg" alt="Card image cap">-->
+                        <div class="card-body">
+                            <h5 class="card-title">Binary Star Simulation</h5>
+                            <p class="card-text">Developed simulation software to model Contact binary star systems on Nvidia gaming hardware</p>
+                            <a href="https://github.com/masonamccallum/BinaryStarModel" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="card mb-3 my-card">
+                        <div class="card-body">
+                            <h5 class="card-title">Bioinformatics</h5>
+                            <p class="card-text">16s, 18s, and ITS rRNA analysis and classification pipeline</p>
+                            <a href="https://github.com/masonamccallum/BioinformaticsPipeline" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}
